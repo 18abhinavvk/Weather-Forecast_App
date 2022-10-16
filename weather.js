@@ -14,7 +14,18 @@ document.querySelector(".search-box").addEventListener("input", async (e) => {
     ]
     
     const months = [
-      "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December",
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
     ]
     
     //OpenWeatherMap's API Key URL:
