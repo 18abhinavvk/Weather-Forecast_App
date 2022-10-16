@@ -1,16 +1,21 @@
 //Complete the Weather API Backend part using openweathermap api
-document.querySelector(".search-box").addEventListener("input", async (e) => {
+document.querySelector(".search-box").addEventListener("input", async (e) => { 
+    const today = new Date()
+    const search_city = e.target.value
+    console.log(search_city)
     const days = [
-      "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
     ]
     
     const months = [
       "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December",
     ]
-    
-    const today = new Date()
-    const search_city = e.target.value
-    console.log(search_city)
     
     //OpenWeatherMap's API Key URL:
     
