@@ -11,7 +11,12 @@ document.querySelector(".search-box").addEventListener("input", async (e) => {
     const today = new Date()
     const search_city = e.target.value
     console.log(search_city)
+    
+    //OpenWeatherMap's API Key URL:
+    
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${search_city}&units=metric&appid=eb5de98bbce98647bb5ac29063fcba7b`
+    
+    //Using Fetch to fetch Data from OpenWeatherMap's API Key URL:
     
     try {
       const res = await fetch(url)
